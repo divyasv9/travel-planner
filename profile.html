@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust - Create Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anon" referrerpolicy="no-referrer" />
+  <script src="profile.js"></script>
+</head>
+<body class="bg">
+
+  <header class="d-flex flex-column justify-content-center align-items-center py-3">
+  </header>
+
+  <main class="container">
+
+    <h1 id="profile-heading">Create Your Wanderlust Profile</h1>
+
+    <div id="profile-form-container">
+      <form id="profile-form">
+        <div class="form-group mb-3">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="email">Email Address:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary px-4">Create Profile</button>
+      </form>
+    </div>
+
+    <div id="existing-account-message" class="alert alert-warning d-none" role="alert">
+      If you already have a Wanderlust account! Please <a href="login.html">log in</a> or view your <a href="profile.html">profile</a>.
+    </div>
+
+  </main>
+
+  <footer class="text-center py-3">
+    <p>&copy; 2024 Wanderlust - Travel Your Way</p>
+    <ul class="social-media d-flex justify-content-center">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
